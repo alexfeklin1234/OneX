@@ -1,0 +1,80 @@
+.os{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/wallpapers/1.jpg);
+    background-size: cover;
+
+
+    /* background-image: url(https://source.unsplash.com/featured/1300x900); */
+    margin: 0;
+}
+.all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+}
+.computer_app{
+    width: 70px;
+
+}
+
+
+.terminal_app{
+    width: 70px;
+
+}
+
+
+
+
+
+
+/* computer app */
+.computer_app_modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+  
+  /* Модальное содержание/коробка */
+.computer_app_modal_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+  
+
+
+
+
+/* terminal app */
+.terminal_app_modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+  
+  /* Модальное содержание/коробка */
+.terminal_app_modal_content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
