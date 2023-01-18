@@ -7,10 +7,17 @@ function runterminalcode() {
     }
   }
   
+
+
+function random_background() {
+  document.body.style= "background-image: url(https://source.unsplash.com/featured/1300x900);";
+}
   
+function reboot() {
+  window.location.href = "/loading.html";    
+}
   
-  
-  
+
   
   
   
@@ -97,3 +104,56 @@ function runterminalcode() {
       terminal_app_modal.style.display = "none";
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // settings app
+  // Получить модальный
+  var settings_app_modal = document.getElementById("settings_app_modal");
+  
+  // Получить кнопку, которая открывает модальный
+  var settings_app_btn = document.getElementById("settings_app_btn");
+  
+  // Получить элемент <span>, который закрывает модальный
+  var settings_app_modal_close = document.getElementsByClassName("settings_app_modal_close")[0];
+  
+  // Когда пользователь нажимает на кнопку, откройте модальный
+  settings_app_btn.onclick = function() {
+    settings_app_modal.style.display = "block";
+  }
+  
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  settings_app_modal_close.onclick = function() {
+    settings_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function(event) {
+    if (event.target == settings_app_modal) {
+      settings_app_modal.style.display = "none";
+    }
+  }
+
+  
