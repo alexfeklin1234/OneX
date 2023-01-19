@@ -14,7 +14,7 @@
 
 
 <div class="all">
-    <img id="computer_app_btn" class="computer_app" src="./img/this-pc.png" alt="">     
+    <img id="computer_app_btn" class="computer_app" src="./img/this-pc.png" alt=""> 
 </div>
 
 <div class="all">
@@ -26,6 +26,10 @@
   <img id="settings_app_btn" class="settings_app" src="./img/settings.png" alt="">     
 </div>
 
+
+<div class="all">
+  <img id="calculator_app_btn" class="calculator_app" src="./img/calculator.jpg" alt="">     
+</div>
 
 
 
@@ -96,6 +100,42 @@
   </div>
   
 
+
+
+
+
+
+<!-- calculator -->
+<div id="calculator_app_modal" class="calculator_app_modal">
+
+
+  
+  <div class="calculator_app_modal_content">
+  <span class="calculator_app_modal_close">&times;</span>
+  <p>calculator</p>
+  <input id="num1" />
+
+  <div id="operator_btns">
+    <button id="plus" class="operator" onclick="op='+'">+</button>
+    <button id="minus" class="operator" onclick="op='-'">-</button>
+    <button id="times" class="operator" onclick="op='*'">x</button>
+    <button id="divide" class="operator" onclick="op='/'">:</button>
+  </div>
+
+  <input id="num2" />
+
+  <button onclick="func()">равняется...</button>
+
+  <p id="result"></p>
+
+    </div>
+
+
+
+
+
+    
+  </div>
 
 
 

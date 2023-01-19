@@ -18,9 +18,72 @@ function reboot() {
 }
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var op; //выбранный оператор
+function func() {
+  var result;
+  var num1 = Number(document.getElementById("num1").value);
+  var num2 = Number(document.getElementById("num2").value);
+  switch (op) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      if (num2) {
+        result = num1 / num2;
+      } else {
+        result = 'бесконечность';
+      }
+      break;
+    default:
+      result = 'выберите операцию';
+  }
+
+  document.getElementById("result").innerHTML = result;
+}
+
+
+
+
+
+
+
   
   
   
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
@@ -157,3 +220,47 @@ function reboot() {
   }
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // calculator app
+  // Получить модальный
+  var calculator_app_modal = document.getElementById("calculator_app_modal");
+  
+  // Получить кнопку, которая открывает модальный
+  var calculator_app_btn = document.getElementById("calculator_app_btn");
+  
+  // Получить элемент <span>, который закрывает модальный
+  var calculator_app_modal_close = document.getElementsByClassName("calculator_app_modal_close")[0];
+  
+  // Когда пользователь нажимает на кнопку, откройте модальный
+  calculator_app_btn.onclick = function() {
+    calculator_app_modal.style.display = "block";
+  }
+  
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  calculator_app_modal_close.onclick = function() {
+    calculator_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function(event) {
+    if (event.target == calculator_app_modal) {
+      calculator_app_modal.style.display = "none";
+    }
+  }
