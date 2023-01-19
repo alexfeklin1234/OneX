@@ -12,6 +12,9 @@ function runterminalcode() {
 function random_background() {
   document.body.style= "background-image: url(https://source.unsplash.com/featured/1300x900);";
 }
+function regular_background() {
+  document.body.style= "background-image: url(../../img/wallpapers/1.jpg);";
+}
   
 function reboot() {
   window.location.href = "/loading.html";    
