@@ -1,3 +1,9 @@
+setInterval(() => {
+  let mydate = new Date()
+  
+  document.getElementById("timenow").innerHTML = mydate;
+}, 1000);
+
 
 function runterminalcode() {
     let terminalcode = document.getElementById("terminalcode").value;  
@@ -15,7 +21,23 @@ function random_background() {
 function regular_background() {
   document.body.style= "background-image: url(../../img/wallpapers/1.jpg);";
 }
+
+function hello_background() {
+  document.body.style= "background-image: url(../../img/wallpapers/hello.gif);";
+}
+
+function city_background() {
+  document.body.style= "background-image: url(../../img/wallpapers/city.gif);";
+}
+
+function neoncity_background() {
+  document.body.style= "background-image: url(../../img/wallpapers/neoncity.gif);";
+}
   
+function forest_background() {
+  document.body.style= "background-image: url(../../img/wallpapers/forest.jpg);";
+}
+
 function reboot() {
   window.location.href = "/loading.html";    
 }
@@ -56,11 +78,11 @@ function func() {
       if (num2) {
         result = num1 / num2;
       } else {
-        result = 'бесконечность';
+        result = 'infinity';
       }
       break;
     default:
-      result = 'выберите операцию';
+      result = 'select operation';
   }
 
   document.getElementById("result").innerHTML = result;

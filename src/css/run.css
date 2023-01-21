@@ -14,7 +14,12 @@ body{
     grid-auto-rows: 100px;
 }
 
-
+.line{
+    border-bottom: 3px solid rgb(0, 0, 0); 
+}
+.buttoninsettings{
+    margin: 1em 0;
+}
 
 .computer_app{
     width: 70px;
