@@ -20,8 +20,10 @@ setInterval(() => {
   }
 
   let mydate = new Date()
-  
-  document.getElementById("timenow").innerHTML = mydate;
+  let hour = mydate.getHours();
+  let min = mydate.getMinutes();
+  let sec = mydate.getSeconds();
+  document.getElementById("timenow").innerHTML = hour + " : " + min + " : " + sec;
 }, 1);
 
 
@@ -313,5 +315,52 @@ function func() {
   window.onclick = function(event) {
     if (event.target == calculator_app_modal) {
       calculator_app_modal.style.display = "none";
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // clock app
+  // Получить модальный
+  var clock_app_modal = document.getElementById("clock_app_modal");
+  
+  // Получить кнопку, которая открывает модальный
+  var clock_app_btn = document.getElementById("clock_app_btn");
+  
+  // Получить элемент <span>, который закрывает модальный
+  var clock_app_modal_close = document.getElementsByClassName("clock_app_modal_close")[0];
+  
+  // Когда пользователь нажимает на кнопку, откройте модальный
+  clock_app_btn.onclick = function() {
+    clock_app_modal.style.display = "block";
+  }
+  
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  clock_app_modal_close.onclick = function() {
+    clock_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function(event) {
+    if (event.target == clock_app_modal) {
+      clock_app_modal.style.display = "none";
     }
   }
