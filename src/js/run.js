@@ -1,3 +1,4 @@
+document.getElementById("text_editor_value").value = localStorage.save_text_in_text_editor; 
 setInterval(() => {
   // background
   if (localStorage.background == 'random') {
@@ -35,6 +36,10 @@ function runterminalcode() {
     }
   }
   
+
+function savetext() {
+  localStorage.save_text_in_text_editor = document.getElementById("text_editor_value").value; 
+}
 
 
 function random_background() {
@@ -364,3 +369,41 @@ function func() {
       clock_app_modal.style.display = "none";
     }
   }
+
+
+
+
+
+
+
+
+
+    // texteditor app
+  // Получить модальный
+  var texteditor_app_modal = document.getElementById("texteditor_app_modal");
+  
+  // Получить кнопку, которая открывает модальный
+  var texteditor_app_btn = document.getElementById("texteditor_app_btn");
+  
+  // Получить элемент <span>, который закрывает модальный
+  var texteditor_app_modal_close = document.getElementsByClassName("texteditor_app_modal_close")[0];
+  
+  // Когда пользователь нажимает на кнопку, откройте модальный
+  texteditor_app_btn.onclick = function() {
+    texteditor_app_modal.style.display = "block";
+  }
+  
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  texteditor_app_modal_close.onclick = function() {
+    texteditor_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function(event) {
+    if (event.target == texteditor_app_modal) {
+      texteditor_app_modal.style.display = "none";
+    }
+  }
+
+
+  
