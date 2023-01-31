@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneX</title>
     <style>
+        body{
+            background-color: black;
+        }
         h2{
             color: white;
         }
-        body{
-            margin: 0;
-            background-color: black;
-        }
+
+
+
+
         .glow-on-hover:before {
             content: '';
             background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -77,27 +80,18 @@
     </style>
 </head>
 <body>
+<button onclick="back()" class="glow-on-hover" type="button">Back</button>
     <center>
-    <h2>OneX</h2>
-    <h2>Hi! OneX is web OS!</h2>
-    <h2>This OS was created in 2023.</h2>
-
-    <h2>(If you want to run the OS, click on the "Run OS" button.)</h2>
-    <h2>(If you want to know more information click on the "Information" button)</h2>
-    <h2>(If you want to join our development team, click on the "For Developers" button)</h2>
-    <button onclick="run()" class="glow-on-hover" type="button">Run OS</button>
-    <button onclick="info()" class="glow-on-hover" type="button">Information</button>
-    <button onclick="dev()" class="glow-on-hover" type="button">For Developers</button>
+        <h2>This OS was created in 2023.</h2>
+        <h2> This OS has a lot of versions and updates. </h2>
+        <h2>The development team will continue to create new updates and versions. </h2>
+        <h2>Initially, they planned to create not an OS, but a web terminal.</h2>
+        <h2>But then the development team came up with an idea to create an OS image.</h2>
+        <h2> And so! Now anyone can run the OS directly in the browser.</h2>
     </center>
     <script>
-        function run() {
-            window.location.href = "/loading.html";    
-        }
-        function info() {
-            window.location.href = "/info.html";    
-        }
-        function dev() {
-            window.location.href = "/dev.html";   
+        function back() {
+            window.location.href = "/index.html";  
         }
     </script>
 </body>
