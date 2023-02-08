@@ -6,9 +6,6 @@ if (localStorage.cache == 'delete') {
 document.getElementById("text_editor_value").value = localStorage.save_text_in_text_editor; 
 setInterval(() => {
   // background
-  if (localStorage.background == 'random') {
-    document.body.style= "background-image: url(https://source.unsplash.com/featured/1300x900);";
-  }
   if (localStorage.background == 'regular') {
     document.body.style= "background-image: url(../../img/wallpapers/1.jpg);";
   }
@@ -47,10 +44,7 @@ function savetext() {
 }
 
 
-function random_background() {
-  document.body.style= "background-image: url(https://source.unsplash.com/featured/1300x900);";
-  localStorage.background = 'random'
-}
+
 function regular_background() {
   document.body.style= "background-image: url(../../img/wallpapers/1.jpg);";
   localStorage.background = 'regular'
