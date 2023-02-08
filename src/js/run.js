@@ -271,6 +271,7 @@ function func() {
   // Когда пользователь нажимает на кнопку, откройте модальный
   settings_app_btn.onclick = function() {
     settings_app_modal.style.display = "block";
+
   }
   
   // Когда пользователь нажимает на <span> (x), закройте модальное окно
@@ -317,6 +318,7 @@ function func() {
   // Когда пользователь нажимает на кнопку, откройте модальный
   calculator_app_btn.onclick = function() {
     calculator_app_modal.style.display = "block";
+    mini_apps_app_modal.style.display = "none";
   }
   
   // Когда пользователь нажимает на <span> (x), закройте модальное окно
@@ -364,6 +366,7 @@ function func() {
   // Когда пользователь нажимает на кнопку, откройте модальный
   clock_app_btn.onclick = function() {
     clock_app_modal.style.display = "block";
+    mini_apps_app_modal.style.display = "none";
   }
   
   // Когда пользователь нажимает на <span> (x), закройте модальное окно
@@ -399,6 +402,7 @@ function func() {
   // Когда пользователь нажимает на кнопку, откройте модальный
   texteditor_app_btn.onclick = function() {
     texteditor_app_modal.style.display = "block";
+    mini_apps_app_modal.style.display = "none";
   }
   
   // Когда пользователь нажимает на <span> (x), закройте модальное окно
@@ -414,4 +418,31 @@ function func() {
   }
 
 
+    // lemon browser app
+  // Получить модальный
+  var lemon_browser_app_modal = document.getElementById("lemon_browser_app_modal");
+  
+  // Получить кнопку, которая открывает модальный
+  var lemon_browser_app_btn = document.getElementById("lemon_browser_app_btn");
+  
+  // Получить элемент <span>, который закрывает модальный
+  var lemon_browser_app_modal_close = document.getElementsByClassName("lemon_browser_app_modal_close")[0];
+  
+  // Когда пользователь нажимает на кнопку, откройте модальный
+  lemon_browser_app_btn.onclick = function() {
+    lemon_browser_app_modal.style.display = "block";
+    mini_apps_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  lemon_browser_app_modal_close.onclick = function() {
+    lemon_browser_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function(event) {
+    if (event.target == lemon_browser_app_modal) {
+      lemon_browser_app_modal.style.display = "none";
+    }
+  }
   
