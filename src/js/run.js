@@ -147,56 +147,64 @@ function func() {
   
   
   
-  // computer app
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  // mini apps app
   // Получить модальный
-  var computer_app_modal = document.getElementById("computer_app_modal");
+  var mini_apps_app_modal = document.getElementById("mini_apps_app_modal");
   
   // Получить кнопку, которая открывает модальный
-  var computer_app_btn = document.getElementById("computer_app_btn");
+  var mini_apps_app_btn = document.getElementById("mini_apps_app_btn");
   
   // Получить элемент <span>, который закрывает модальный
-  var computer_app_modal_close = document.getElementsByClassName("computer_app_modal_close")[0];
+  var mini_apps_app_modal_close = document.getElementsByClassName("mini_apps_app_modal_close")[0];
   
   // Когда пользователь нажимает на кнопку, откройте модальный
-  computer_app_btn.onclick = function() {
-      computer_app_modal.style.display = "block";
+  mini_apps_app_btn.onclick = function() {
+    mini_apps_app_modal.style.display = "block";
   }
   
   // Когда пользователь нажимает на <span> (x), закройте модальное окно
-  computer_app_modal_close.onclick = function() {
-      computer_app_modal.style.display = "none";
+  mini_apps_app_modal_close.onclick = function() {
+    mini_apps_app_modal.style.display = "none";
   }
   
   // Когда пользователь щелкает в любом месте за пределами модального, закройте его
   window.onclick = function(event) {
-    if (event.target == computer_app_modal) {
-      computer_app_modal.style.display = "none";
+    if (event.target == mini_apps_app_modal) {
+      mini_apps_app_modal.style.display = "none";
     }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   // terminal app
