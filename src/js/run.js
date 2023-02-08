@@ -1,3 +1,8 @@
+if (localStorage.cache == 'delete') {
+  window.location.href = "/mini_apps/cache/delete_cache_app/run.html";
+}
+
+
 document.getElementById("text_editor_value").value = localStorage.save_text_in_text_editor; 
 setInterval(() => {
   // background

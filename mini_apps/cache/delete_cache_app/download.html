@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneX</title>
+    <style>
+body{margin: 0; background-color: black;}
+.loading{
+    width: 90%;
+}
+h1{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="os">
+        <center>
+            <h1>Please wait...</h1>
+            <h1>(about one minute)</h1>
+        </center>
+
+        <img class="loading" src="../../../img/wallpapers/loading.gif" alt="">
+        <!-- <h1 style="color: aliceblue;">OneX</h1> -->
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "/run.html";
+            localStorage.cache = 'work'
+        }, 50000);
+    </script>
+</body>
+</html>
