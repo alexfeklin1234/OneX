@@ -416,3 +416,37 @@ function func() {
       texteditor_app_modal.style.display = "none";
     }
   }
+
+
+
+
+
+
+
+    // delete cache app
+  // Получить модальный
+  var delete_cache_app_modal = document.getElementById("delete_cache_app_modal");
+  
+  // Получить кнопку, которая открывает модальный
+  var delete_cache_app_btn = document.getElementById("delete_cache_app_btn");
+  
+  // Получить элемент <span>, который закрывает модальный
+  var delete_cache_app_modal_close = document.getElementsByClassName("delete_cache_app_modal_close")[0];
+  
+  // Когда пользователь нажимает на кнопку, откройте модальный
+  delete_cache_app_btn.onclick = function() {
+    delete_cache_app_modal.style.display = "block";
+    mini_apps_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  delete_cache_app_modal_close.onclick = function() {
+    delete_cache_app_modal.style.display = "none";
+  }
+  
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function(event) {
+    if (event.target == delete_cache_app_modal) {
+      delete_cache_app_modal.style.display = "none";
+    }
+  }
