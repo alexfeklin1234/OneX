@@ -1,4 +1,17 @@
 
+
+.app_manager_board{
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.24);
+    /* background: rgba(255, 255, 255, 0.373); */
+    padding: 1em 0 1em 0;
+    margin: 1em 15em;
+    border-radius: 1em;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+
 .card_img{
     width: 50%;
     border-radius: 3em;
@@ -13,11 +26,16 @@ body{
     /* background-image: url(https://source.unsplash.com/featured/1300x900); */
     margin: 0;
 }
-.all{
-    display: grid;
+.app_icon{
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
+    grid-auto-rows: 100px; */
+
+
+    margin: 0em 1em;
+    
 }
+
 
 .line{
     border-bottom: 3px solid rgb(0, 0, 0); 
@@ -72,6 +90,17 @@ body{
 
 
 
+.map_app{
+    width: 70px;
+}
+
+
+
+.flashlight_app{
+    width: 70px;
+}
+
+
 
 
 
@@ -92,6 +121,7 @@ body{
   
   /* Модальное содержание/коробка */
 .mini_apps_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -118,10 +148,12 @@ body{
     overflow: auto; /* Включите прокрутку, если это необходимо */
     background-color: rgb(0,0,0); /* Цвет запасной вариант */
     background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+
 }
   
   /* Модальное содержание/коробка */
 .terminal_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -172,6 +204,7 @@ body{
   
   /* Модальное содержание/коробка */
 .settings_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -208,6 +241,7 @@ body{
   
   /* Модальное содержание/коробка */
 .calculator_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -237,6 +271,7 @@ body{
   
   /* Модальное содержание/коробка */
 .clock_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -265,6 +300,7 @@ body{
   
   /* Модальное содержание/коробка */
 .texteditor_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
@@ -294,10 +330,80 @@ body{
   
   /* Модальное содержание/коробка */
 .delete_cache_app_modal_content {
+    border-radius: 1em;
     background-color: #fefefe;
     margin: 5% auto; /* 15% сверху и по центру */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* map app */
+.map_app_modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+  
+  /* Модальное содержание/коробка */
+.map_app_modal_content {
+    border-radius: 1em;
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+
+
+
+
+
+/* flashlight app */
+.flashlight_app_modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+  
+  /* Модальное содержание/коробка */
+.flashlight_app_modal_content {
+    border-radius: 1em;
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
 
