@@ -1,9 +1,31 @@
+// load 
 if (localStorage.cache == 'delete') {
   window.location.href = "/mini_apps/cache/delete_cache_app/run.html";
 }
 
 
+
 document.getElementById("text_editor_value").value = localStorage.save_text_in_text_editor; 
+
+if (localStorage.type_texteditor_text_type == 'verdana') {
+  document.getElementsByClassName('text_editor_value')[0].style= "font-family: Verdana; font-size: 20;";
+  
+}
+
+if (localStorage.type_texteditor_text_type == 'geneva') {
+  document.getElementsByClassName('text_editor_value')[0].style= "font-family: Geneva; font-size: 20;";
+  
+}
+
+
+if (localStorage.type_texteditor_text_type == 'Times_New_Roman') {
+  document.getElementsByClassName('text_editor_value')[0].style= "font-family: Times New Roman; font-size: 20;";
+  
+}
+
+
+
+// save background
 setInterval(() => {
   // background
   if (localStorage.background == 'regular') {
@@ -30,6 +52,9 @@ setInterval(() => {
 }, 1);
 
 
+
+
+// terminal run
 function runterminalcode() {
     let terminalcode = document.getElementById("terminalcode").value;  
     if (terminalcode == 'say =>') {
@@ -39,12 +64,15 @@ function runterminalcode() {
   }
   
 
+
+// save text
 function savetext() {
   localStorage.save_text_in_text_editor = document.getElementById("text_editor_value").value; 
+
 }
 
 
-
+// save background
 function regular_background() {
   document.body.style= "background-image: url(../../img/wallpapers/1.jpg);";
   localStorage.background = 'regular'
@@ -449,3 +477,30 @@ function func() {
       delete_cache_app_modal.style.display = "none";
     }
   }
+
+
+
+// text type
+function texteditor_text_type_verdana() {
+  localStorage.type_texteditor_text_type = 'verdana'
+  document.getElementsByClassName('text_editor_value')[0].style= "font-family: Verdana; font-size: 20;";
+
+}
+
+
+function texteditor_text_type_geneva() {
+  localStorage.type_texteditor_text_type = 'geneva'
+  document.getElementsByClassName('text_editor_value')[0].style= "font-family: Geneva; font-size: 20;";
+
+}
+
+
+function texteditor_text_type_Times_New_Roman() {
+  localStorage.type_texteditor_text_type = 'Times_New_Roman'
+  document.getElementsByClassName('text_editor_value')[0].style= "font-family: Times New Roman; font-size: 20;";
+
+}
+ 
+
+ 
+
